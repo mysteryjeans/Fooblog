@@ -1,4 +1,4 @@
-fooblog
+Fooblog
 =======
 
-Bare bone blog, 
+Simple blog having, xmlrpc to published posts 
