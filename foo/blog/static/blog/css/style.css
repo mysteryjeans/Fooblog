@@ -1,0 +1,307 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: #4F4F4F;
+	line-height: 1.5em;
+    background-color: #75272A;
+	font-size: 0.8em;
+	font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #F14E32;
+	text-decoration: none;
+	font-weight: 400;
+	margin: 5px 0px;
+}
+
+h3 {
+	margin: 10px 0px;
+	font-weight: bold;
+	font-family: "Ubuntu Light", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1 a {
+	color: #F14E32 !important;
+}
+
+a {
+	color: #0091AB;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #08A8C5;
+}
+
+li {
+	list-style-type: none;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+header, footer {
+    overflow: hidden;
+}
+
+footer {
+	font-size: 0.9em;
+	margin-top: 4px;
+	background-color: whiteSmoke;
+	padding: 20px 10px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+img {
+	border: none;
+}
+
+#main {
+    margin: 20px auto;
+    width: 1024px;
+}
+
+#bar {
+    padding: 20px 10px;
+	overflow: hidden;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);  
+}
+
+#categories {
+    width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+#bar, #bar a, #bar a:hover {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	text-decoration: none !important;
+}
+
+#categories li {
+
+	float: left;
+	padding-right: 20px;
+}
+
+#box {
+    margin: auto;
+	width: 1024px;
+    overflow: hidden;
+    background-color: white;    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#content {
+	float: left;
+	width: 613px;
+	padding-right: 30px;
+    border-right: 1px solid #DDD;
+    min-height: 500px;
+}
+
+#sidebar {
+	float: left;
+	width: 290px;
+}
+
+#content, #sidebar {
+    padding: 30px 30px;
+}
+
+#disqus_thread {
+	margin: 40px 0;
+}
+
+.logo {
+    background: url('/static/blog/img/logo-50x50.png') no-repeat;    
+	height: 45px;
+	margin: 0;
+	padding: 15px 0 0 62px !important;
+}
+
+.right {
+	float: right;	
+}
+
+.post-entry {
+	clear: both;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.post-title, .posts-title {
+	color: #4D1F41;
+	font-size: 1.4em;
+	margin-bottom: 5px;
+	line-height: 1.2;
+	font-family: "Ubuntu Light", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.post-title a, .post-title a:visited {
+	color: #4D1F41;
+}
+
+.post-title a:hover {
+	color: #B53E7E;
+}
+
+.posts-title {
+	margin-bottom: 20px;
+	font-size: 1.6em;
+}
+
+.post-publisher {
+	color: #666;
+	font-size: 0.9em;
+	margin-bottom: 15px
+}
+
+.post-preview-img {
+	float: left;
+	width: 200px;
+	margin-right: 25px;
+	margin-top: 7px;
+}
+
+.post-preview-img img {
+	width: 100%;
+}
+
+.post-content {
+	overflow: hidden;
+}
+
+.post-content img {
+	display: block !important;
+	margin: 20px auto;
+	max-width: 100%;
+}
+
+.post-content ul {
+	margin: 20px 0px;
+}
+
+.post-content li {
+	list-style-type: disc !important;
+	margin-left: 35px;
+	padding: 5px;	
+}
+
+.post-tags {
+	clear: both;
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.post-tags li {
+	background-color: #EFEFEF;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, white), color-stop(100%, #EFEFEF));
+	background: -webkit-linear-gradient(white,#EFEFEF);
+	background: -moz-linear-gradient(white,#EFEFEF);
+	background: -o-linear-gradient(white,#EFEFEF);
+	background: -ms-linear-gradient(white,#EFEFEF);
+	background: linear-gradient(white,#EFEFEF);
+	border: 1px solid #D8D8D8;
+	margin-bottom: 10px;
+	margin-left: 0;
+	display: inline-block;
+	list-style-type: asterisks;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.post-footer {
+	font-size: 1.1em;
+	clear: both;
+	margin: 20px 0;
+	padding: 5px 0;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #DDDDDD;
+}
+
+.post-read-more {
+	text-transform: uppercase;
+}
+
+.post-comment-link {
+	color: #F14E32;
+}
+
+.page-nav {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.trends {	
+	font-size: 1.2em;
+}
+
+.trends h2 {
+	font-size: 1.3em;
+}
+
+.trends ul li {
+	padding: 15px 0;
+	border-bottom: 1px solid #DDD;
+}
+
+.message {
+    color: #F14E32;
+}
+
+.get-ubuntu
+{
+	background: url("/static/blog/img/background-ubuntu-cta.png") repeat-x scroll center 0 #DD4814;
+	padding: 8px 13px 10px 13px;
+	color: white !important;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 18px;
+	text-shadow: none;
+	margin: -9px 0;
+	float: right;
+}
+
+.get-download 
+{
+	background: url("/static/blog/img/background-ubuntu-cta.png") repeat-x scroll center 0 #DD4814;
+	padding: 8px 13px 10px 13px;
+	color: white !important;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 18px;
+	text-shadow: none;
+	margin: auto;
+	display: block;
+	width: auto; 	
+}
+
+.rss-link 
+{
+ 	color: #F14E32;
+	float: right;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 1.2em !important;
+}
+
+.rss-link:hover 
+{
+	 color: #F14E32;
+}

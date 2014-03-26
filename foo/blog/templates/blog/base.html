@@ -1,0 +1,43 @@
+{% extends "blog/skeleton.html" %}
+
+{% block body %}
+<div id="main">
+	<header>        
+		<h1 class="logo"><a href="/">{{ site_name }}</a></h1>		
+	</header>
+    <div id="box">
+        <div id="bar">
+			<ul id="categories">
+				{% for category in featured_categories %}
+				<li>
+					<a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<a class="get-ubuntu" href="https://github.com/mysteryjeans/fooblog">Get Fooblog</a>
+			<a type="application/rss+xml" rel="alternate" href="/feed/" class="rss-link" title="Get the latest posts via RSS">RSS</a>
+		</div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="sidebar">
+            {% block sidebar %}
+            <div class="trends">
+                <h2>Popular Posts</h2>
+                <ul>
+                    {% for post in top_posts %}
+                    <li>
+                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endblock %}
+        </div>
+	</div>
+    <footer>
+		<span>Copyright &copy; 2012 Fooblog</span>
+	</footer>
+</div>
+{% endblock %}

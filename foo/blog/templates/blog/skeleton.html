@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>{% block title %}{% if page_title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}{% endblock %}</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="msvalidate.01" content="44345B977FC544DD66636E2B6917F9F2" />
+		<meta name="keywords" content="{{ meta_keywords|default:site_meta_keywords }}"/>
+		<meta name="description" content="{{ meta_description|default:site_meta_description }}"/>
+		<link type="text/css" href="{{ STATIC_URL }}blog/css/style.css" rel="stylesheet"/>
+		<link rel="icon" href="{{ STATIC_URL }}blog/img/favicon.ico" type="image/x-icon"/>
+		<link type="application/rss+xml" href="http://feeds2.feedburner.com/feedbook/ubuntu" rel="alternate"/>
+		<meta property="og:title" content="{% if page_title %}{{ page_title }}{% else %}{{ site_name }}{% endif %}"/>
+		<meta property="og:description" content="{{ meta_description|default:site_meta_description }}"/>
+
+		<script type="text/javascript">
+			//Unity
+			try {
+				function unityReady() {
+				}
+
+				var Unity = external.getUnityObject(1.0);
+
+				Unity.init({
+					name : "{{ site_name }}",
+					iconUrl : "http://ubuntu.feedbook.org/static/blog/img/logo-300x300.png",
+					onInit : unityReady
+				});
+			} catch (err) {
+			}
+		</script>
+
+		{% block head %}
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://ubuntu.feedbook.org"/>
+		<meta property="og:image" content="{{ STATIC_URL }}blog/img/logo-300x300.png"/>
+		{% endblock %}
+		{% if not debug %}
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-21650536-2']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		{% endif %}
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+	</body>
+</html>
