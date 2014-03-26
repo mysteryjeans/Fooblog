@@ -1,0 +1,4 @@
+fooblog
+=======
+
+Bare bone blog, 
